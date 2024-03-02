@@ -19,7 +19,7 @@
     ripgrep
 
     # -- Compilers/Interpreters --
-    python3
+    python311Full
     rustup
 
     # -- Config --
