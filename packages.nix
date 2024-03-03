@@ -19,10 +19,11 @@
     ripgrep
     legendary-gl
 
-    # -- Compilers/Interpreters --
+    # -- Programming --
     python311Full
     rustup
     unityhub
+    ldtk
 
     # -- Config --
     nwg-look
