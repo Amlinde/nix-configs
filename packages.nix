@@ -41,6 +41,7 @@
     firefox
     thunderbird
     discord
+    xwaylandvideobridge
   ];
 
   programs.steam.enable = true;
