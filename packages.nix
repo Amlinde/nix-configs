@@ -17,6 +17,7 @@
     neofetch
     wget
     ripgrep
+    legendary-gl
 
     # -- Compilers/Interpreters --
     python311Full
