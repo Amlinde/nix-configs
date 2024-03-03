@@ -20,8 +20,6 @@
     legendary-gl
 
     # -- Programming --
-    python311Full
-    rustup
     unityhub
     ldtk
 
