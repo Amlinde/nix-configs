@@ -22,6 +22,7 @@
     # -- Compilers/Interpreters --
     python311Full
     rustup
+    unityhub
 
     # -- Config --
     nwg-look
