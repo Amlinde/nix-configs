@@ -1,7 +1,7 @@
 { inputs, ... }:
 {
   imports = [
-    /etc/nixos/configuration.nix
+    ./system/configuration.nix
     ./system/boot.nix
     ./system/services.nix
     ./system/users.nix
