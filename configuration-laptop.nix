@@ -7,9 +7,9 @@
 {
   imports =
     [
-      ./system/laptop-hardware-configuration.nix
+      ./system/hardware-configuration-laptop.nix
       ./configuration-generic.nix
-      ./pkgs/pkgs-pc.nix
+      ./pkgs/pkgs-laptop.nix
     ];
 
   networking.hostName = "al-laptop-nixos"; # Define your hostname.

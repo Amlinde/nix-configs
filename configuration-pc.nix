@@ -7,7 +7,7 @@
 {
   imports =
     [
-      ./system/pc-hardware-configuration.nix
+      ./system/hardware-configuration-pc.nix
       ./configuration-generic.nix
       ./system/fs-pc.nix
       ./pkgs/pkgs-pc.nix
