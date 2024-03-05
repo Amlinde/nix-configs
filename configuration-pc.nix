@@ -9,7 +9,7 @@
     [
       ./system/pc-hardware-configuration.nix
       ./configuration-generic.nix
-      ./system/fs.nix
+      ./system/fs-pc.nix
       ./pkgs/pkgs-pc.nix
     ];
 
