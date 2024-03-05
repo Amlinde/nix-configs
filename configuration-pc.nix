@@ -18,4 +18,5 @@
   boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "al-desktop-nixos"; # Define your hostname.
+  hardware.ckb-next.enable = true;
 }
