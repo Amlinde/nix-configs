@@ -35,7 +35,6 @@
     partition-manager
     bottles
     kate
-    vscodium.fhs
     kitty
 
     # -- Desktop --
