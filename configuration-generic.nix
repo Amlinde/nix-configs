@@ -3,7 +3,7 @@
   imports = [
     /etc/nixos/configuration.nix
     ./system/boot.nix
-    ./sustem/services.nix
+    ./system/services.nix
     ./system/users.nix
     ./pkgs/pkgs-generic.nix
   ];
