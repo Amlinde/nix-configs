@@ -36,7 +36,6 @@
     kitty
 
     # -- Desktop --
-    discover
     firefox
     thunderbird
     discord
