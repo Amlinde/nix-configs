@@ -6,7 +6,6 @@
     # -- Core --
     micro
     wineWowPackages.stable
-    fira-code
     libnotify
 
     # -- Cli --
@@ -42,6 +41,12 @@
     thunderbird
     discord
     xwaylandvideobridge
+  ];
+
+  fonts.packages = with pkgs; [
+    fira-code
+    vistafonts
+    corefonts
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
