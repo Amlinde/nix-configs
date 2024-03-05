@@ -8,7 +8,7 @@ in
     enable = true;
     package = pkgs.vscodium.fhs;
     extensions = with marketplace; [
-      bbenoist.nix
+      jnoortheen.nix-ide
       vstuc
     ];
   };
