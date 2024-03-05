@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.amlin = {
@@ -11,7 +11,7 @@
   };
 
   home-manager = {
-    # extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = { inherit inputs; };
     users = {
       "amlin" = import ./home/home.nix;
     };
