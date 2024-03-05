@@ -10,7 +10,6 @@
     libnotify
     
     # -- Cli --
-    git
     btop
     nixpkgs-fmt
     asdf-vm
@@ -19,12 +18,14 @@
     ripgrep
     legendary-gl
 
-    # -- Programming --
+    # -- Dev --
     unityhub
     ldtk
+    git
+    git-lfs
+    gh
 
     # -- Config --
-    nwg-look
     winetricks
     protontricks
     sddm-kcm
@@ -34,7 +35,7 @@
     partition-manager
     bottles
     kate
-    vscodium
+    vscodium.fhs
     kitty
 
     # -- Desktop --
@@ -45,7 +46,7 @@
     xwaylandvideobridge
   ];
 
-  programs.steam.enable = true;
+  # programs.steam.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

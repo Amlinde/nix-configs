@@ -9,16 +9,15 @@
     [
       /etc/nixos/configuration.nix
       ./boot.nix
-      ./fs.nix
+      ./laptop.nix
       ./services.nix
       ./users.nix
       ./packages.nix
     ];
 
-  powerManagement.cpuFreqGovernor = "performance";
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  # powerManagement.cpuFreqGovernor = "performance";
 
-  networking.hostName = "al-desktop-nixos"; # Define your hostname.
+  networking.hostName = "al-laptop-nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary

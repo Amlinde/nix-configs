@@ -42,7 +42,8 @@
   security.polkit.enable = true;
 
   services.flatpak.enable = true;
-  hardware.ckb-next.enable = true;
+
+  services.power-profiles-daemon.enable = false;
 
   # List services that you want to enable:
 
