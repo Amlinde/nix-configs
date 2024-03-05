@@ -11,5 +11,6 @@
       ./configuration-generic.nix
       ./pkgs/pkgs-pc.nix
     ];
+
   networking.hostName = "al-laptop-nixos"; # Define your hostname.
 }

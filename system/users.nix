@@ -5,7 +5,7 @@
     isNormalUser = true;
     description = "Alex Linde";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [ 
+    packages = with pkgs; [
       r2modman
     ];
   };

@@ -8,7 +8,7 @@
     wineWowPackages.stable
     fira-code
     libnotify
-    
+
     # -- Cli --
     btop
     nixpkgs-fmt
