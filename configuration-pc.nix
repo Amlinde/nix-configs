@@ -7,6 +7,7 @@
 {
   imports =
     [
+      ./system/pc-hardware-configuration.nix
       ./configuration-generic.nix
       ./system/fs.nix
       ./pkgs/pkgs-pc.nix
@@ -14,6 +15,7 @@
 
   powerManagement.cpuFreqGovernor = "performance";
   boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "al-desktop-nixos"; # Define your hostname.
 }

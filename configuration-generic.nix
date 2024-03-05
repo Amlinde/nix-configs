@@ -1,7 +1,6 @@
 { inputs, ... }:
 {
   imports = [
-    ./system/configuration.nix
     ./system/boot.nix
     ./system/services.nix
     ./system/users.nix

@@ -7,6 +7,7 @@
 {
   imports =
     [
+      ./system/laptop-hardware-configuration.nix
       ./configuration-generic.nix
       ./pkgs/pkgs-pc.nix
     ];
