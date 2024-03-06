@@ -26,7 +26,7 @@
     # -- Config --
     winetricks
     protontricks
-    sddm-kcm
+    kdePackages.sddm-kcm
 
     # -- Utilities
     isoimagewriter
