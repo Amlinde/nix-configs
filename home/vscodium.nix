@@ -6,8 +6,9 @@ in
 {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium.fhs;
+    package = pkgs.vscodium;
     extensions = with marketplace; [
+      arrterian.nix-env-selector
       jnoortheen.nix-ide
       vstuc
     ];
