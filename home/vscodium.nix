@@ -10,6 +10,7 @@ in
     extensions = with marketplace; [
       arrterian.nix-env-selector
       jnoortheen.nix-ide
+      rust-lang.rust-analyzer
     ];
   };
 }
