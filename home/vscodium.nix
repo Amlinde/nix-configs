@@ -6,11 +6,10 @@ in
 {
   programs.vscode = {
     enable = true;
-    package = pkgs.vscodium;
+    package = pkgs.vscodium.fhsWithPackages (ps: with ps; [ dotnet-sdk_8 mono ]);
     extensions = with marketplace; [
       arrterian.nix-env-selector
       jnoortheen.nix-ide
-      vstuc
     ];
   };
 }
