@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 let
   extra-path = with pkgs; [
     dotnet-sdk_8
