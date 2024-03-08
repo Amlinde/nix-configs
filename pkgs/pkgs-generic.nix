@@ -32,8 +32,8 @@
     kdePackages.sddm-kcm
 
     # -- Utilities
-    isoimagewriter
-    partition-manager
+    kdePackages.isoimagewriter
+    kdePackages.partitionmanager
     bottles
     kate
     kitty
