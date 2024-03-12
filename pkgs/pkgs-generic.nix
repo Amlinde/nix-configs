@@ -43,6 +43,8 @@
     thunderbird
     discord
     xwaylandvideobridge
+    krita
+    kdePackages.kalk
   ];
 
   fonts.packages = with pkgs; [
