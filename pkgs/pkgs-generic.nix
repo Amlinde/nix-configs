@@ -20,6 +20,7 @@
     ripgrep
 
     # -- Dev --
+    godot_4
     unityhub
     ldtk
     git
