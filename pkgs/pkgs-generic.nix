@@ -45,6 +45,7 @@
     xwaylandvideobridge
     krita
     kdePackages.kalk
+    avalonia-ilspy
   ];
 
   fonts.packages = with pkgs; [
