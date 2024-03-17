@@ -11,7 +11,7 @@
     enable = true;
     autoNumlock = true;
   };
-  services.xserver.desktopManager.plasma6.enable = true;
+  services.desktopManager.plasma6.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
