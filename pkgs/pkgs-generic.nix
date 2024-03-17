@@ -18,6 +18,7 @@
     neofetch
     wget
     ripgrep
+    scrcpy
 
     # -- Dev --
     godot_4
