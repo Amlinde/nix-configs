@@ -15,9 +15,4 @@
     fsType = "ntfs-3g";
     options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" ];
   };
-  fileSystems."/mnt/f" = {
-    device = "/dev/sdb1";
-    fsType = "ntfs-3g";
-    options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" ];
-  };
 }
