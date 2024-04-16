@@ -11,6 +11,7 @@ in
       arrterian.nix-env-selector
       jnoortheen.nix-ide
       rust-lang.rust-analyzer
+      ms-python.python
     ];
   };
 }
