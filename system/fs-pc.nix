@@ -6,7 +6,7 @@
     options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" ];
   };
   fileSystems."/mnt/d" = {
-    device = "/dev/sda1";
+    device = "/dev/sdb1";
     fsType = "ntfs-3g";
     options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" ];
   };
