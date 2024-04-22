@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     legendary-gl
     ckb-next
+    mangohud
     gamescope
   ];
 
