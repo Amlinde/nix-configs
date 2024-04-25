@@ -25,4 +25,5 @@
     };
   };
   programs.steam.enable = true;
+  virtualisation.waydroid.enable = true;
 }

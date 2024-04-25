@@ -19,6 +19,8 @@
     wget
     ripgrep
     scrcpy
+    p7zip
+    unrar
 
     # -- Dev --
     godot_4
@@ -48,6 +50,7 @@
     krita
     kdePackages.kalk
     avalonia-ilspy
+    webex
   ];
 
   fonts.packages = with pkgs; [
@@ -57,6 +60,7 @@
   ];
 
   services.udev.packages = [ pkgs.dolphinEmu ];
+  programs.adb.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
