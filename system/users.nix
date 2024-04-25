@@ -4,7 +4,7 @@
   users.users.amlin = {
     isNormalUser = true;
     description = "Alex Linde";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" "kvm" ];
     packages = with pkgs; [
       r2modman
     ];
