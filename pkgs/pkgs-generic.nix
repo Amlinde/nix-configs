@@ -46,6 +46,7 @@
     firefox
     thunderbird
     discord
+    vesktop
     xwaylandvideobridge
     krita
     kdePackages.kalk
