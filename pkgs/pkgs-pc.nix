@@ -1,10 +1,14 @@
 { pkgs, ... }:
+let
+  foundryvtt = pkgs.callPackage ./foundryvtt {};
+in
 {
   environment.systemPackages = with pkgs; [
     legendary-gl
     ckb-next
     mangohud
     gamescope
+    foundryvtt
   ];
 
   programs.gamemode.enable = true;
