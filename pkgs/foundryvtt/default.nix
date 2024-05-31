@@ -9,11 +9,11 @@
 
 stdenv.mkDerivation rec {
   pname = "foundryvtt";
-  version = "11.315";
+  version = "12.325";
   src = requireFile {
-    name = "FoundryVTT-11.315.zip";
+    name = "FoundryVTT-12.325.zip";
     url = "https://foundryvtt.com";
-    sha256 = "a182530d72a3f885cd0310e81f1ffd8f294695be5b6931dd6ff565be0ed3dc01";
+    sha256 = "21c87538cdf6179387bdaa53dd8afe319d93a3b305dd30cd48ff903fb04dd85d";
   };
 
   buildInputs = [ unzip ];

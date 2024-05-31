@@ -1,6 +1,7 @@
 { pkgs, ... }:
 let
-  foundryvtt = pkgs.callPackage ./foundryvtt {};
+  foundryvtt = pkgs.callPackage ./foundryvtt { };
+  prismlauncher = pkgs.prismlauncher.override { jdks = with pkgs; [ temurin-bin-8 temurin-bin-17 temurin-bin-21 ]; };
 in
 {
   environment.systemPackages = with pkgs; [
@@ -9,6 +10,7 @@ in
     mangohud
     gamescope
     foundryvtt
+    prismlauncher
   ];
 
   programs.gamemode.enable = true;
