@@ -21,6 +21,7 @@
     scrcpy
     p7zip
     unrar
+    yt-dlp
 
     # -- Dev --
     godot_4
