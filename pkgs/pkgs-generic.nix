@@ -52,12 +52,14 @@
     krita
     kdePackages.kalk
     avalonia-ilspy
+    mpv
+    vlc
   ];
 
   fonts.packages = with pkgs; [
     fira-code
     vistafonts
-#    corefonts
+    corefonts
   ];
 
   services.udev.packages = [ pkgs.dolphinEmu ];
