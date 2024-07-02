@@ -30,6 +30,13 @@ in
       ];
     };
   };
-  programs.steam.enable = true;
-  virtualisation.waydroid.enable = true;
+  programs = {
+    steam.enable = true;
+    virt-manager.enable = true;
+  };
+
+  virtualisation = {
+    libvirtd.enable = true;
+    waydroid.enable = true;
+  };
 }
