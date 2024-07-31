@@ -15,14 +15,16 @@
     btop
     nixpkgs-fmt
     asdf-vm
-    neofetch
+#   neofetch
     wget
     ripgrep
     scrcpy
     p7zip
     unrar
     yt-dlp
-
+	gnupg
+	pinentry
+	
     # -- Dev --
     godot_4
     unityhub
@@ -50,6 +52,7 @@
     vesktop
     xwaylandvideobridge
     krita
+    inkscape
     kdePackages.kalk
     avalonia-ilspy
     mpv

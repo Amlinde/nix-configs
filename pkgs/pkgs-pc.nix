@@ -2,15 +2,24 @@
 let
   foundryvtt = pkgs.callPackage ./foundryvtt { };
   prismlauncher = pkgs.prismlauncher.override { jdks = with pkgs; [ temurin-bin-8 temurin-bin-17 temurin-bin-21 ]; };
+  lutris = pkgs.lutris.override { extraPkgs = pkgs: with pkgs; [ nwjs ]; };
 in
 {
   environment.systemPackages = with pkgs; [
     legendary-gl
+	lutris
     ckb-next
     mangohud
     gamescope
-    foundryvtt
+#   foundryvtt
     prismlauncher
+	poptracker
+	dolphin-emu
+	timeshift
+  ];
+
+  services.udev.packages = with pkgs; [
+    dolphinEmu
   ];
 
   programs.gamemode.enable = true;

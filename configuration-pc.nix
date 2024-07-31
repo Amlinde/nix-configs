@@ -8,6 +8,7 @@
   imports =
     [
       ./system/hardware-configuration-pc.nix
+      ./system/services-amd.nix
       ./configuration-generic.nix
       ./system/fs-pc.nix
       ./pkgs/pkgs-pc.nix
