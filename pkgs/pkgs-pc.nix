@@ -48,4 +48,10 @@ in
     libvirtd.enable = true;
     waydroid.enable = true;
   };
+
+  services.hardware.openrgb = { 
+    enable = true; 
+    package = pkgs.openrgb-with-all-plugins; 
+    motherboard = "amd";  
+  };
 }
