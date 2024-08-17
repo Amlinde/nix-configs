@@ -62,13 +62,14 @@
   fonts.packages = with pkgs; [
     fira-code
     vistafonts
-    corefonts
+#    corefonts
   ];
 
   services.udev.packages = [ pkgs.dolphinEmu ];
   programs.adb.enable = true;
   programs.kdeconnect.enable = true;
   programs.wireshark.enable = true;
+  programs.zsh.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
