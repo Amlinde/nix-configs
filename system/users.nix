@@ -4,6 +4,7 @@
   users.users.amlin = {
     isNormalUser = true;
     description = "Alex Linde";
+    shell = pkgs.zsh;
     extraGroups = [ "networkmanager" "wheel" "adbusers" "kvm" ];
     packages = with pkgs; [
       r2modman
