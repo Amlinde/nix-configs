@@ -42,6 +42,10 @@
 
   services.flatpak.enable = true;
 
+  services.tailscale.enable = true;
+  
+  services.pcscd.enable = true;
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
@@ -51,5 +55,5 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
+   networking.firewall.enable = true;
 }

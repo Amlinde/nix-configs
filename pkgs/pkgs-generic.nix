@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   imports = [
-    ./rider.nix
   ];
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -15,15 +14,14 @@
     btop
     nixpkgs-fmt
     asdf-vm
-#   neofetch
+    fastfetch
     wget
     ripgrep
     scrcpy
     p7zip
     unrar
     yt-dlp
-	gnupg
-	pinentry
+    pcsc-tools
 	
     # -- Dev --
     godot_4
@@ -74,8 +72,9 @@
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+  programs.gnupg.agent = {
+    enable = true;
+    enableSSHSupport = true;
+    pinentryPackage = pkgs.pinentry-curses;
+  };
 }
