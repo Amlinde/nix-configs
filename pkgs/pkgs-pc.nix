@@ -15,11 +15,7 @@ in
     prismlauncher
 	poptracker
 	dolphin-emu
-	timeshift
-  ];
-
-  services.udev.packages = with pkgs; [
-    dolphinEmu
+	lact
   ];
 
   programs.gamemode.enable = true;
@@ -54,4 +50,7 @@ in
     package = pkgs.openrgb-with-all-plugins; 
     motherboard = "amd";  
   };
+
+  systemd.packages = with pkgs; [ lact ];
+  systemd.services.lactd.wantedBy = ["multi-user.target"];
 }

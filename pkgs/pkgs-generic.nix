@@ -63,7 +63,7 @@
 #    corefonts
   ];
 
-  services.udev.packages = [ pkgs.dolphinEmu ];
+  services.udev.packages = [ pkgs.dolphin-emu ];
   programs.adb.enable = true;
   programs.kdeconnect.enable = true;
   programs.wireshark.enable = true;
