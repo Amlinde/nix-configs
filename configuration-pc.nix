@@ -12,6 +12,7 @@
       ./configuration-generic.nix
       ./system/fs-pc.nix
       ./pkgs/pkgs-pc.nix
+      ./system/g923.nix
     ];
 
   powerManagement.cpuFreqGovernor = "performance";

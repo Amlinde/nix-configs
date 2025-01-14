@@ -22,6 +22,9 @@
     unrar
     yt-dlp
     pcsc-tools
+    usb-modeswitch
+    pciutils
+    usbutils
 	
     # -- Dev --
     godot_4
@@ -52,7 +55,6 @@
     krita
     inkscape
     kdePackages.kalk
-    avalonia-ilspy
     mpv
     vlc
   ];

@@ -16,6 +16,7 @@ in
 	poptracker
 	dolphin-emu
 	lact
+	oversteer
   ];
 
   programs.gamemode.enable = true;
