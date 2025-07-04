@@ -10,9 +10,9 @@
     fsType = "ntfs-3g";
     options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" "nofail" ];
   };
-#  fileSystems."/mnt/e" = {
-#    device = "/dev/disk/by-uuid/F4EEEE03EEEDBDCC";
-#    fsType = "ntfs-3g";
-#    options = [ "uid=1000" "gid=100" "rw" "user" "exec" "umask=000" "nofail" ];
-#  };
+  fileSystems."/mnt/e" = {
+    device = "/dev/disk/by-uuid/139a7f4a-1544-425c-864d-1b64dd75752e";
+    fsType = "btrfs";
+    options = [ "nofail" ];
+  };
 }

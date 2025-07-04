@@ -1,22 +1,25 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 let
   foundryvtt = pkgs.callPackage ./foundryvtt { };
   prismlauncher = pkgs.prismlauncher.override { jdks = with pkgs; [ temurin-bin-8 temurin-bin-17 temurin-bin-21 ]; };
   lutris = pkgs.lutris.override { extraPkgs = pkgs: with pkgs; [ nwjs ]; };
+  beammp_launcher = inputs.beammp_launcher.defaultPackage.x86_64-linux;
 in
 {
   environment.systemPackages = with pkgs; [
     legendary-gl
-	lutris
+    lutris
     ckb-next
     mangohud
     gamescope
 #   foundryvtt
     prismlauncher
-	poptracker
-	dolphin-emu
-	lact
-	oversteer
+#	poptracker
+    dolphin-emu
+    lact
+    oversteer
+    beammp_launcher
+    limo
   ];
 
   programs.gamemode.enable = true;
@@ -43,7 +46,7 @@ in
 
   virtualisation = {
     libvirtd.enable = true;
-    waydroid.enable = true;
+#    waydroid.enable = true;
   };
 
   services.hardware.openrgb = { 

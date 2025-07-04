@@ -28,7 +28,7 @@
 	
     # -- Dev --
     godot_4
-    unityhub
+#    unityhub
     ldtk
     git
     git-lfs
@@ -43,7 +43,7 @@
     kdePackages.isoimagewriter
     kdePackages.partitionmanager
     bottles
-    kate
+    kdePackages.kate
     kitty
 
     # -- Desktop --
@@ -51,7 +51,7 @@
     thunderbird
     discord
     vesktop
-    xwaylandvideobridge
+    kdePackages.xwaylandvideobridge
     krita
     inkscape
     kdePackages.kalk

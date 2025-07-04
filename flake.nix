@@ -8,6 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
+	beammp_launcher = {
+		url = "path:pkgs/games/BeamMP-Launcher";
+		inputs.nixpkgs.follows = "nixpkgs";
+	};
   };
 
   outputs = { self, nixpkgs, ... }@inputs:

@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   imports = [
-    ./gtk.nix
+  #  ./gtk.nix
     ./kitty.nix
     ./vscodium.nix
   ];
