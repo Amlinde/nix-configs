@@ -12,6 +12,7 @@ in
       jnoortheen.nix-ide
       rust-lang.rust-analyzer
       ms-python.python
+      ms-dotnettools.csharp
     ];
   };
 }
