@@ -1,6 +1,8 @@
 { pkgs, ... }:
 {
-  services.udev.extraRules = ''
-    ATTR{idVendor}=="cafe", ATTR{idProduct}=="a301", MODE="0666", ENV{ID_INPUT_JOYSTICK}="1"
+  services.udev.extraHwdb = ''
+    id-input:modalias:input:*vCAFEpA301*
+      ID_INPUT_ACCELEROMETER=0
+      ID_INPUT_JOYSTICK=1
   '';
 }
