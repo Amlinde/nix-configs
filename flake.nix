@@ -20,7 +20,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in
     {
-      nixosConfigurations.pc = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.al-desktop-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration-pc.nix
@@ -28,7 +28,7 @@
         ];
       };
 
-      nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.al-laptop-nixos = nixpkgs.lib.nixosSystem {
         specialArgs = { inherit inputs; };
         modules = [
           ./configuration-laptop.nix
