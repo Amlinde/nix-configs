@@ -1,7 +1,10 @@
 { ... }:
 {
   # Enable networking
-  networking.networkmanager.enable = true;
+  networking.networkmanager = {
+    enable = true;
+  #  wifi.backend = "iwd";
+  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -31,7 +34,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     # If you want to use JACK applications, uncomment this
-    #jack.enable = true;
+    jack.enable = true;
 
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
@@ -55,5 +58,7 @@
   # networking.firewall.allowedTCPPorts = [ ... ];
   # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
-   networking.firewall.enable = true;
+  networking.firewall.enable = true;
+
+  hardware.keyboard.qmk.enable = true;
 }
