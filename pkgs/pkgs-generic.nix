@@ -10,7 +10,7 @@ in
   environment.systemPackages = with pkgs; [
     # -- Core --
     micro
-    wineWowPackages.stable
+    wineWow64Packages.stable
     libnotify
 
     # -- Cli --
@@ -28,11 +28,12 @@ in
     usb-modeswitch
     pciutils
     usbutils
+	android-tools
 	
     # -- Dev --
     godot_4
 #    unityhub
-    ldtk
+#    ldtk
     git
     git-lfs
     gh
@@ -45,7 +46,7 @@ in
     # -- Utilities
     kdePackages.isoimagewriter
     kdePackages.partitionmanager
-    bottles
+#    bottles
     kdePackages.kate
     kitty
 
@@ -54,7 +55,7 @@ in
     thunderbird
     discord
     vesktop
-    kdePackages.xwaylandvideobridge
+#    kdePackages.xwaylandvideobridge
     krita
     inkscape
     kdePackages.kalk
@@ -65,12 +66,11 @@ in
 
   fonts.packages = with pkgs; [
     fira-code
-    vistafonts
+    vista-fonts
 #    corefonts
   ];
 
-  services.udev.packages = [ pkgs.dolphin-emu ];
-  programs.adb.enable = true;
+#  services.udev.packages = [ pkgs.dolphin-emu ];
   programs.kdeconnect.enable = true;
   programs.wireshark.enable = true;
   programs.zsh.enable = true;
