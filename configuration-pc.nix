@@ -13,12 +13,13 @@
       ./system/fs-pc.nix
       ./pkgs/pkgs-pc.nix
       ./system/g923.nix
+      ./system/sppro.nix
     ];
 
   powerManagement.cpuFreqGovernor = "performance";
-  boot.kernelPackages = pkgs.linuxPackages_zen;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.supportedFilesystems = [ "ntfs" ];
 
   networking.hostName = "al-desktop-nixos"; # Define your hostname.
-  hardware.ckb-next.enable = true;
+#  hardware.ckb-next.enable = true;
 }
