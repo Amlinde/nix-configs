@@ -4,15 +4,14 @@ let
   vstuc = marketplace.visualstudiotoolsforunity.vstuc.overrideAttrs (_: { sourceRoot = "extension"; });
 in
 {
-  programs.vscode = {
+  programs.vscodium = {
     enable = true;
-    package = pkgs.vscodium;
     profiles.default.extensions = with marketplace; [
       arrterian.nix-env-selector
       jnoortheen.nix-ide
       rust-lang.rust-analyzer
       ms-python.python
-      ms-dotnettools.csharp
+      # ms-dotnettools.csharp
     ];
   };
 }
