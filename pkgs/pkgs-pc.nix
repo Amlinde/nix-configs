@@ -1,7 +1,6 @@
 { pkgs, inputs, ... }:
 let
   foundryvtt = pkgs.callPackage ./foundryvtt { };
-  dusklight = pkgs.callPackage ./games/dusklight { };
   lutris = pkgs.lutris.override { extraPkgs = pkgs: with pkgs; [ nwjs ]; };
   beammp_launcher = inputs.beammp_launcher.defaultPackage.x86_64-linux;
 in
@@ -13,11 +12,11 @@ in
     qmk
 #   foundryvtt
 	shipwright
-	zelda64recomp
+#	zelda64recomp
 	dusklight
 #	poptracker
-#   dolphin-emu
-    lact
+    dolphin-emu
+#    lact
     oversteer
 #   beammp_launcher
     limo
@@ -67,6 +66,6 @@ in
     };
   };
 
-  systemd.packages = with pkgs; [ lact ];
-  systemd.services.lactd.wantedBy = ["multi-user.target"];
+#  systemd.packages = with pkgs; [ lact ];
+#  systemd.services.lactd.wantedBy = ["multi-user.target"];
 }
