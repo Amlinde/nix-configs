@@ -2,7 +2,7 @@
 {
   # Enable networking
   networking.networkmanager = {
-    enable = true;
+  	enable = true;
   #  wifi.backend = "iwd";
   };
 
@@ -10,9 +10,8 @@
   services.xserver.enable = true;
 
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm = {
+  services.displayManager.plasma-login-manager = {
     enable = true;
-    autoNumlock = true;
   };
   services.desktopManager.plasma6.enable = true;
 
